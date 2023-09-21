@@ -46,19 +46,23 @@ export default function Doctor() {
       {
         title: "眼科",
         component: <Eye />,
-      },{
-        title:"皮肤科",
-        component:<DermatologySVG />
-      },{
-        title:"神经科",
-        component:<NeurologySVG />
-      },{
-        title:"肿瘤科",
-        component:<OncologySVG />
-      },{
-        title:"心理康复科",
-        component:<PsychologySVG />
-      }
+      },
+      {
+        title: "皮肤科",
+        component: <DermatologySVG />,
+      },
+      {
+        title: "神经科",
+        component: <NeurologySVG />,
+      },
+      {
+        title: "肿瘤科",
+        component: <OncologySVG />,
+      },
+      {
+        title: "心理康复科",
+        component: <PsychologySVG />,
+      },
     ],
     []
   );
@@ -66,12 +70,15 @@ export default function Doctor() {
     <>
       <div className="h-screen">
         <TopTitle titleText={selectDoctor()} />
+        <div className="mt-8"></div>
         <div className="w-screen grid  gap-y-4 xl:grid-cols-6 grid-cols-4 justify-center items-center ">
           {classifyData.map((t, index) => {
             return (
-              <Card title={t.title} key={index}  >
-                {t.component}
-              </Card>
+              <div className="w-full flex justify-center">
+                <Card title={t.title} key={index}>
+                  {t.component}
+                </Card>
+              </div>
             );
           })}
           {/* <Card title="儿科">
