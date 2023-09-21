@@ -1,18 +1,18 @@
-import internalMedicine from  '../assets/imgs/department/internalMedicine.svg' 
-import pediatrics from  '../assets/imgs/department/pediatrics.svg' 
-import pentaphthaliaceae from  '../assets/imgs/department/pentaphthaliaceae.svg' 
-import surgery from  '../assets/imgs/department/surgery.svg' 
+import InternalMedicine from  '../assets/imgs/department/InternalMedicine.svg' 
+import Pediatrics from  '../assets/imgs/department/Pediatrics.svg' 
+import Pentaphthaliaceae from  '../assets/imgs/department/Pentaphthaliaceae.svg' 
+import Surgery from  '../assets/imgs/department/Surgery.svg' 
 
 export function findImgs(name) {
     switch (name) {
         case '内科':
-            return internalMedicine;
+            return InternalMedicine;
         case '儿科':
-            return pediatrics;
+            return Pediatrics;
         case '五官科':
-            return pentaphthaliaceae;
+            return Pentaphthaliaceae;
         case '外科':
-            return surgery;
+            return Surgery;
         default:
             return null;
     }

@@ -29,7 +29,7 @@ export default function BarCode() {
     },[])
   return (
    <>
-    <div className='w-64 h-24 '>
+    <div className='w-64 h-24 m-2 '>
         <svg ref={barcodeRef}>
 
         </svg>
